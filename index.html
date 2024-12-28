@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainPage" class="container">
+        <div class="title">LOTERÍA</div>
+        <button id="startButton" class="button">INICIAR</button>
+    </div>
+
+    <div id="gamePage" class="container hidden">
+        <div class="card" id="cardDisplay"></div>
+        <button id="nextButton" class="button">SIGUIENTE</button>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
+            <button id="reviewButton" class="button" style="flex: 1;">REVISAR</button>
+            <button id="resetButton" class="button" style="flex: 1;">RESET</button>
+        </div>
+    </div>
+
+    <div id="reviewPage" class="container hidden">
+        <div class="miniatures" id="miniatures"></div>
+        <button id="backButton" class="button">REGRESAR</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
